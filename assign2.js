@@ -17,7 +17,9 @@ window.addEventListener('DOMContentLoaded', (event) => {
       appendLiArray(ul, nameSort);
     }
     else if(event.target.getAttribute("sort") == "date"){
-      const dateSort = playsArray.sort( (a, b) => a.year < b.year? -1: 1);
+      const dateSort = playsArray.sort(function(a,b) {
+        return a.likelyDate - b.likelyDate;
+      });
       appendLiArray(ul, dateSort);
     }
   });
