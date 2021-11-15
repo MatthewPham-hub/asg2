@@ -49,7 +49,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
   });
   //Add event listener to display a credits box in the header upon mouseover,
   //deleting it after 5 seconds.
-  document.querySelector("#credits").addEventListener("mouseover", function(event){
+  document.querySelector("#creditButton").addEventListener("mouseover", function(event){
     if(!document.querySelector("#box")){
       var creditBox = document.createElement("div");
       creditBox.setAttribute("id", "box");

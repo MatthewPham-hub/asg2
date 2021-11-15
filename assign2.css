@@ -111,9 +111,8 @@ button {
    text-align:    center; 
    height: 50px;    
 }
-header button {
+header button{
    float:right;
-   top:5px;
 }
 header #box {
    float: right;
